@@ -5,11 +5,14 @@
   "author": "thiaguinhoo <thiagoluizsog@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start:development": "nodemon ./src/server.js"
+    "start:development": "cross-env NODE_ENV=development nodemon ./src/server.js"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
